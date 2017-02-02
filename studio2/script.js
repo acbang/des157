@@ -1,6 +1,6 @@
 // DOM Content Loading checker
-document.addEventListener("DOMContentLoaded", function(event) {
-    console.log("DOM fully loaded and parsed");
+//document.addEventListener("DOMContentLoaded", function(event) {
+    //console.log("DOM fully loaded and parsed");
 
     // Process form once form is submitted
     document.f.onsubmit = processForm;
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var myMsg = document.getElementById("myMsg");
 		var header = document.getElementById("header");
 
-		header.innerHTML = "BROCCOLI!!!!!!!111"
+		header.innerHTML = "<h1> BROCCOLI!!!!!!!111 <h1>"
 		myMsg.innerHTML = "in the middle of " + field1 + ", " + field2 + " get off of me" + "<br>in the cut i'm " + field3 + " up my broccoli" + "<br>yeah i know " + field4 + " fond of me" + "<br>all " + field4 + " wanna do is " + field5 + " that broccoli";
 
 		// Change css elements after submitting
@@ -45,4 +45,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		myMsg.innerHTML = "";
 		myMsg.style.display = "none";
 	}
-});
+//};
