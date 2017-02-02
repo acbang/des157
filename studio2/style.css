@@ -16,7 +16,6 @@ form, p {
 form, footer {
 	margin-left: 25%;
 	padding-right: 45px;
-	padding-bottom: 10px;
 }
 
 div {
@@ -38,8 +37,4 @@ input[type="reset"], input[type="submit"] {
 	position: relative;
 	padding: 5px;
 	margin-left: 25px;
-}
-
-a {
-	padding-right: 10px;
 }
