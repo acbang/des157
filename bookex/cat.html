@@ -1,0 +1,58 @@
+<!-- Template for book solutions ("bookExTemplate.html") from glenda drew --> 
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> ADRIAN ANG / CH 13 / THE CAT'S HAT / DES 157 / WINTER 2017</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>chapter 13 - the cat's hat</h1>
+    <h2>open the console to see the results of the script</h2>
+
+    <img src="img/cat.png" id="cat" style="position: absolute">
+    <img src="img/hat.png" id="hat" style="position: absolute">
+
+    <script>
+        // This script rotates a cat and hat image oppositely around an ellipse.
+        var cat = document.querySelector("#cat");
+        var hat = document.querySelector("#hat");
+         
+        var angle = 0, lastTime = null;
+          
+        function animate(time) {
+          if (lastTime != null)
+            angle += (time - lastTime) * 0.001;
+            lastTime = time;
+           
+            cat.style.top = (Math.sin(angle) * 25) + 30 + "px";
+            cat.style.left = (Math.cos(angle) * 100) + 200 + "px";
+            hat.style.top = (Math.sin(angle + Math.PI) * 25) + 30 + "px";
+            hat.style.left = (Math.cos(angle + Math.PI) * 100) + 200 + "px";
+            requestAnimationFrame(animate);
+        }
+      
+      requestAnimationFrame(animate);
+    </script>
+</body>
