@@ -45,3 +45,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		myMsg.innerHTML = "";
 		myMsg.style.display = "none";
 	}
+});
