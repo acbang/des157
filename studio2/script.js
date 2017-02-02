@@ -1,6 +1,6 @@
 // DOM Content Loading checker
-//document.addEventListener("DOMContentLoaded", function(event) {
-    //console.log("DOM fully loaded and parsed");
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
 
     // Process form once form is submitted
     document.f.onsubmit = processForm;
@@ -45,4 +45,3 @@
 		myMsg.innerHTML = "";
 		myMsg.style.display = "none";
 	}
-//};
