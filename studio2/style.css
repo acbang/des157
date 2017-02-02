@@ -13,8 +13,7 @@ form, p {
 	display: inline-block;	
 }
 
-form {
-	margin-top: 100px;
+form, footer {
 	margin-left: 25%;
 	padding-right: 45px;
 }
@@ -31,6 +30,7 @@ label {
 
 form {
 	display: inline-block;
+	margin-top: 100px;
 }
 
 input[type="reset"], input[type="submit"] {

@@ -1,7 +1,10 @@
 // DOM Content Loading checker
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
 
     // Process form once form is submitted
     document.f.onsubmit = processForm;
+    document.f.onreset = clearForm;
 
     // Broccoli (8-Bit Version) by Ryan CC (original by D.R.A.M. and Lil Yachty)
 	var mySong = new Audio('media/broccoli.mp3');
@@ -13,6 +16,11 @@
 		var field3 = document.f.field3.value;
 		var field4 = document.f.field4.value;
 		var field5 = document.f.field5.value;
+
+		if (field1 == "", field2 == "", field3 == "", field4 == "", field5 == "") {
+			alert("You gotta fill this MADLIB out fully thoooo");
+			return false;
+		}
 
 		var myMsg = document.getElementById("myMsg");
 
@@ -31,6 +39,8 @@
 
 	// Form reset
 	function clearForm() {
+		var myMsg = document.getElementById("myMsg");
 		myMsg.innerHTML = "";
 		myMsg.style.display = "none";
 	}
+});
