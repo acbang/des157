@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		}
 
 		var myMsg = document.getElementById("myMsg");
+		var header = document.getElementById("header");
 
+		header.innerHTML = "BROCCOLI!!!!!!!111"
 		myMsg.innerHTML = "in the middle of " + field1 + ", " + field2 + " get off of me" + "<br>in the cut i'm " + field3 + " up my broccoli" + "<br>yeah i know " + field4 + " fond of me" + "<br>all " + field4 + " wanna do is " + field5 + " that broccoli";
 
 		// Change css elements after submitting
