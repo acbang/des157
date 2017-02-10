@@ -1,0 +1,52 @@
+<!-- Template for book solutions ("bookExTemplate.html") from glenda drew --> 
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> ADRIAN ANG / CH 14 / MOUSE TRAIL / DES 157 / WINTER 2017</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>chapter 14 - mouse trail</h1>
+    <h2>open the console to see the results of the script</h2>
+
+    <script> 
+    // This script creates circles stored in an array and uses a mouse's X and Y position to have the circles follow the mouse.
+    var trail = [];
+    for (var i = 0; i < 9; i++) {
+        var dots = document.createElement("div");
+        dots.className = "trail";
+        document.body.appendChild(dots);
+        trail.push(dots);
+    };
+  
+    var counter = 0;
+    addEventListener("mousemove", function(event) {
+        var thing = trail[counter];
+        thing.style.left = (event.pageX - 1) + "px";
+        thing.style.top = (event.pageY - 1) + "px";
+        counter = (counter + 1) % 9;
+    });
+    </script>
+</body>
