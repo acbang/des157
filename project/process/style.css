@@ -13,8 +13,9 @@ body, section, footer {
 	width: 500px;
 	}
 
-section {
+section, footer {
 	margin-top: 20px;
+
 }
 
 a, footer {
