@@ -13,9 +13,12 @@ body, section, footer {
 	width: 500px;
 	}
 
-section, footer {
+section {
 	margin-top: 20px;
+}
 
+footer {
+	padding-top: 20px;
 }
 
 a, footer {
