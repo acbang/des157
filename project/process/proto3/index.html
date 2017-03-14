@@ -47,7 +47,6 @@
 
 		div{
 			height: 100%;
-			margin-top: 50%;
 		}
 
 		a:link {
@@ -58,6 +57,10 @@
 		#info {
 			font-size-size: 8px;
 			width: 200px;
+		}
+
+		#one {
+			margin-top: 10%;
 		}
 	</style>
 
@@ -96,6 +99,8 @@
 		<section id="five">
 			<h2>IN ACTION</h2>
 			<div id="chartholder1"></div>
+			<button id="start">disaggregated</button>
+			<button id="reset">aggregated</button>
 			<script type="text/javascript">
 				// Generate some data	
 				function dataset1() {
@@ -113,6 +118,21 @@
 					return data1;
 				}
 				
+				function dataset2() {
+					var data2 = {
+							"key": "AAPI College Attainment",
+							"values": [
+								{"key": "Taiwanese", "value" : 74.5},
+								{"key": "Korean", "value": 55},
+								{"key": "Vietnamese", "value": 29},
+								{"key": "Tongan", "value": 15}, 
+								{"key": "Other Micronesian", "value": 5.2} 
+							]
+					}; 
+					console.log(data2);
+					return data2;
+				}
+
 				// Create Donut Chart object
 				var myChart = d3.ez.radialBarChart()
 					.width(600)
@@ -128,11 +148,28 @@
 						.datum(data1)
 						.call(myChart);
 				}		
+
+				function update2() {
+					var data2 = dataset2();
+					d3.select("#chartholder1")
+						.datum(data2)
+						.call(myChart);
+				}
+				
 				update1();
+			
+				d3.select("#start").on("click", function() {
+					update2();
+				})
+
+				d3.select("#reset").on("click", function() {
+					update1();
+				})
 			</script>
-			<h6>Please read note to the left.</h6>
+
+			<h6>Please read note to the left.</h6><!-- 
 			<button id="start">disaggregated</button>
-			<button id="reset">aggregated</button>
+			<button id="reset">aggregated</button> -->
 		</section>
 	</body>
 </html>
