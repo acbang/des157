@@ -5,7 +5,7 @@ var chart = c3.generate({
   },
   data: {
     columns: [
-      ['Asian', 51],
+      ['Asian American or Pacific Islander', 51],
       ['White', 33],
       ['Other', 32],
       ['Two of more races', 31],
@@ -39,7 +39,7 @@ function disaggEdu() {
 function aggEdu() {
   chart.load({
     columns: [
-      ['Asian', 51],
+      ['Asian American or Pacific Islander', 51],
       ['White', 33],
       ['Other', 32],
       ['Two or more races', 31],
