@@ -38,12 +38,14 @@ section.parallax {
 h1 {
   font-size: 48px;
   font-weight: 700;
+  color: white;
 }
 
 h2 {
   padding-bottom: 5px;
   font-size: 28px;
   font-weight: 500;
+  color: white;
 }
 
 h3 {
