@@ -81,15 +81,14 @@ button {
 }
 
 #main {
-  background-image: url("images/main.jpg");
+  background-image: url("images/sec01.jpg");
 }
 
 #info {
-  background-color: green;
+  background-image: url("images/sec02.jpg");
 }
 
 #datasets {
-  background-color: purple;
   padding-top: 50px;
   height: 520px;
 }
