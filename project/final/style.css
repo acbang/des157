@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Montserrat', 'sans serif';
+}
+
+nav {
+  position: fixed;
+  width: 125px;
+  margin-left: 30px;
+  margin-top: 70px;
+}
+
+nav li {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+section {
+  padding-left: 100px;
+}
+
+section.parallax {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  padding-bottom: 5px;
+}
+
+p {
+  padding-bottom: 25px;
+}
+
+button {
+  margin: auto;
+}
+
+#main, #info, #datasets {
+  height: 900px;
+  margin-left: 125px;
+}
+
+#splashHeader, .infoContainer {
+  padding-top: 50vh;
+}
+
+#main {
+  background-image: url("images/main.jpg");
+}
+
+#info {
+  background-color: green;
+}
+
+#datasets {
+  background-color: purple;
+}
+
+.chartContainer {
+  /*float: left;
+  background-color: yellow;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;*/
+}

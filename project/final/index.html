@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ADRIAN ANG / DES 157 / FINAL</title>
+
+		<!-- Load .css files -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+		<link href="library/c3/c3.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+
+		<!-- Load d3.js and c3.js -->
+		<script src="library/d3/d3.min.js" type="text/javascript"></script>
+		<script src="library/c3/c3.min.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<nav>
+			<li><a href="#main">HOME</a></li>
+			<li><a href="#info">INFO</a></li>
+			<li><a href="#datasets">DATA</a></li>
+		</nav>
+
+		<section id="main" class="parallax">
+			<div>
+				<h1 id="splashHeader"><span style="color: yellow">YELLOW</span> DISAGGREGATED</h1>
+				<h2 id="splashSub"><span style="font-size: 14px">how data disaggregation and the model minority myth are affecting asian american and pacific islander communities</span></h2>
+			</div>
+		</section>
+
+		<section id="info">
+			<div class="infoContainer">
+				<h2>what is the model minority myth?</h2>
+				<p>data disaggregation is x and it is important because y. for scope of project, aapi communities (although data disaggregation exists with many other identities)</p>
+
+				<h2>what is data disaggregation?</h2>
+				<p>data disaggregation is x and it is important because y. for scope of project, aapi communities (although data disaggregation exists with many other identities)</p>
+
+				<h2>why is it important?</h2>
+				<p>data disaggregation is x and it is important because y. for scope of project, aapi communities (although data disaggregation exists with many other identities)</p>
+
+				<h2>who does it affect?</h2>
+				<p>data disaggregation is x and it is important because y. for scope of project, aapi communities (although data disaggregation exists with many other identities)</p>
+			</div>
+		</section>
+
+		<section id="datasets">
+			<h2>data disaggregation in action</h2>
+			<h3>see how disaggregated data in different fields can reflect the differences in each ethnic subgroup<h3>
+
+		  <div class="chartContainer" id="containChart1">
+				<h4>bachelor's degree attained, 2013-2015</h4>
+				<div id="chart"></div>
+				<script src="education.js"></script>
+
+				<button onclick="aggEdu();">aggregated</button>
+				<button onclick="disaggEdu();">disaggregated</button>
+			</div>
+
+			<div class="chartContainer" id="containChart2">
+				<h4>median household income, in thousands, 2013-2015</h4>
+				<div id="chart2"></div>
+				<script src="income.js"></script>
+				<button onclick="aggIncome();">aggregated</button>
+				<button onclick="disaggIncome();">disaggregated</button>
+			</div>
+		</section>
+	</body>
+</html>
