@@ -12,15 +12,18 @@ nav {
   width: 125px;
   margin-left: 30px;
   margin-top: 70px;
+
 }
 
 nav li {
   list-style: none;
 }
 
-a:link {
+a:link, a:visited {
   text-decoration: none;
+  color: grey;
 }
+
 
 section {
   padding-left: 100px;
@@ -34,18 +37,34 @@ section.parallax {
 
 h1 {
   font-size: 48px;
+  font-weight: 700;
 }
 
 h2 {
   padding-bottom: 5px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 p {
+  width: 600px;
   padding-bottom: 25px;
+  font-weight: 300;
 }
 
 button {
-  margin: auto;
+  text-align: center;
 }
 
 #main, #info, #datasets {
@@ -53,8 +72,12 @@ button {
   margin-left: 125px;
 }
 
-#splashHeader, .infoContainer {
+#splashHeader {
   padding-top: 50vh;
+}
+
+.infoContainer {
+  padding-top: 20vh;
 }
 
 #main {
@@ -67,12 +90,14 @@ button {
 
 #datasets {
   background-color: purple;
+  padding-top: 50px;
+  height: 520px;
 }
 
 .chartContainer {
-  /*float: left;
-  background-color: yellow;
-  padding-top: 50px;
-  padding-left: 100px;
-  padding-right: 100px;*/
+  width: 400px;
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 50px;
+  float: left;
 }
