@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ADRIAN ANG / DES 157 / PROTOTYPE 2: HTML CLICK-THROUGH</title>
+
+		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+	</head>
+
+	<style>
+		section {
+			width: 100vh;
+			height: 100vh;
+		}
+
+		nav {
+			position: fixed;
+		}
+
+
+	</style>
+
+	<body>
+		<nav>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</nav>
+
+		<section>
+			<h1>DATA DISAGGREGATION</h1>
+		</section>
+
+		<section>
+			<h2>WHAT IS IT?</h2>
+		</section>
+
+		<section>
+			<h2>WHO DOES IT AFFECT?</h2>
+		</section>
+
+		<section>
+			<h2>WHY IS IT IMPORTANT?</h2>
+		</section>
+
+		<section>
+			<h2>IN ACTION</h2>
+
+			<script>
+			var svgContainer1 = d3.select("body").append("svg")
+				.attr("width", 100)
+				.attr("height", 100);
+
+			var circle1 = svgContainer1.append("circle")
+				.attr("cx", 50)
+				.attr("cy", 50)
+				.attr("r", 50);
+
+			var svgContainer2 = d3.select("body").append("svg")
+				.attr("width", 100)
+				.attr("height", 100);
+
+			var circle2 = svgContainer2.append("circle")
+				.attr("cx", 50)
+				.attr("cy", 50)
+				.attr("r", 50);
+
+			var svgContainer3 = d3.select("body").append("svg")
+				.attr("width", 100)
+				.attr("height", 100);
+
+			var circle3 = svgContainer3.append("circle")
+				.attr("cx", 50)
+				.attr("cy", 50)
+				.attr("r", 50);
+			</script>		
+		</section>
+	</body>
+</html>
